@@ -1,5 +1,5 @@
-class Predator {
-    constructor(x, y) {
+class Predator extends LivingCreature {
+   /* constructor(x, y) {
         this.x = x;
         this.y = y;
         this.energy = 40;
@@ -32,7 +32,7 @@ class Predator {
             }
         }
         return found;
-    }
+    }*/
 
     mul() {
         var emptyCells = this.chooseCell(0);
@@ -49,7 +49,7 @@ class Predator {
         }
     }
 
-    move() {
+   /* move() {
 
         this.energy--
         var emptyCells = this.chooseCell(0);
@@ -64,7 +64,7 @@ class Predator {
         } else {
             this.die()
         }
-    }
+    } */
 
     eat() {
         var emptyCells = this.chooseCell(2);

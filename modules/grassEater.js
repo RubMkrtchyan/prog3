@@ -1,5 +1,5 @@
-class GrassEater {
-    constructor(x, y) {
+class GrassEater extends LivingCreature {
+  /* constructor(x, y) {
         this.x = x;
         this.y = y;
         this.energy = 10;
@@ -32,7 +32,7 @@ class GrassEater {
             }
         }
         return found;
-    }
+    } */
 
     mul() {
         var emptyCells = this.chooseCell(0);
@@ -49,7 +49,8 @@ class GrassEater {
         }
     }
 
-    move() {
+  /*  move() {
+
         this.energy--
         var emptyCells = this.chooseCell(0);
         var newCell = random(emptyCells);
@@ -63,7 +64,7 @@ class GrassEater {
         } else {
             this.die()
         }
-    }
+    }*/
 
     eat() {
         var emptyCells = this.chooseCell(1);
