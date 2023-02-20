@@ -1,12 +1,11 @@
 {
   "name": "prog3",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "socket.io": "^4.6.0"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -20,5 +19,6 @@
   "bugs": {
     "url": "https://github.com/RubMkrtchyan/prog3/issues"
   },
-  "homepage": "https://github.com/RubMkrtchyan/prog3#readme"
+  "homepage": "https://github.com/RubMkrtchyan/prog3#readme",
+  "description": ""
 }

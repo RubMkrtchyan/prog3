@@ -1,5 +1,17 @@
+var socket = io();
+
+
+function handleMatrix(matrix){
+console.log(matrix)
+}
+socket.on('send matrix', handleMatrix)
+
+
+
+
+/*
 function generateMatrix(len, gr, mush, grEat, pred, st, cac) {
-    let matrix = [];
+     matrix = [];
     for (let i = 0; i < len; i++) {
         matrix.push([])
         for (let j = 0; j < len; j++) {
@@ -7,15 +19,15 @@ function generateMatrix(len, gr, mush, grEat, pred, st, cac) {
         }
     }
     for (let i = 0; i < gr; i++) {
-        let x = Math.floor(Math.random() * len);
-        let y = Math.floor(Math.random() * len);
+         x = Math.floor(Math.random() * len);
+         y = Math.floor(Math.random() * len);
         if (matrix[y][x] == 0) {
             matrix[y][x] = 1;
         }
     }
     for (let i = 0; i < grEat; i++) {
-        let x = Math.floor(Math.random() * len);
-        let y = Math.floor(Math.random() * len);
+         x = Math.floor(Math.random() * len);
+         y = Math.floor(Math.random() * len);
         if (matrix[y][x] == 0) {
             matrix[y][x] = 2;
         }
@@ -50,17 +62,17 @@ function generateMatrix(len, gr, mush, grEat, pred, st, cac) {
     }
     return matrix;
 }
-let matrix = generateMatrix(40, 120, 45, 6, 4, 12, 10)
+matrix = generateMatrix(40, 120, 45, 6, 4, 12, 10)
+*/
 
-
-var side = 120;
-
-let grassArr = [];
-let grassEaterArr = [];
-let mushArr = []
-let predatorArr = []
-let stoneArr = []
-let cactusArr = []
+side = 120;
+/*
+ grassArr = [];
+ grassEaterArr = [];
+ mushArr = []
+ predatorArr = []
+ stoneArr = []
+ cactusArr = []*/
 function setup() {
     frameRate(5);
     createCanvas(matrix[0].length * side, matrix.length * side);
