@@ -1,15 +1,43 @@
 var socket = io();
 
 
-function handleMatrix(matrix){
+function handleMatrix(matrix) {
 console.log(matrix)
 }
-socket.on('send matrix', handleMatrix)
+
+socket.on('send matrix', handleMatrix);
 
 
 
 
-/*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function generateMatrix(len, gr, mush, grEat, pred, st, cac) {
      matrix = [];
     for (let i = 0; i < len; i++) {
@@ -63,16 +91,16 @@ function generateMatrix(len, gr, mush, grEat, pred, st, cac) {
     return matrix;
 }
 matrix = generateMatrix(40, 120, 45, 6, 4, 12, 10)
-*/
+
 
 side = 120;
-/*
+
  grassArr = [];
  grassEaterArr = [];
  mushArr = []
  predatorArr = []
  stoneArr = []
- cactusArr = []*/
+ cactusArr = []
 function setup() {
     frameRate(5);
     createCanvas(matrix[0].length * side, matrix.length * side);
@@ -104,7 +132,7 @@ function setup() {
     }
 }
 
-function draw() {
+function drawing() {
     for (var y = 0; y < matrix.length; y++) {
         for (var x = 0; x < matrix[y].length; x++) {
 
